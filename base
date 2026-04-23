@@ -1,0 +1,13 @@
+<?php
+
+use Baseons\Kernel;
+
+define('DIRECTORY_BASE', __DIR__);
+
+!file_exists(DIRECTORY_BASE . '/vendor/autoload.php') ? die('Autoload not found!' . PHP_EOL) : require DIRECTORY_BASE . '/vendor/autoload.php';
+
+$kernel = new Kernel;
+
+$kernel->run()->console();
+
+$kernel->terminate();
