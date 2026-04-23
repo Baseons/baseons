@@ -11,6 +11,6 @@ class Example
 {
     public function test()
     {
-        Log::create('teste', 'Helo Word');
+        Log::create('test', 'Helo Word');
     }
 }
