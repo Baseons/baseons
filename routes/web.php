@@ -12,7 +12,7 @@ Route::namespace('App\Controllers\Web')->name('web')->group(function () {
 
     Route::name('file')->prefix('file')->group(function () {
         Route::file('img/{name}', path()->resources('img/{name}'), function ($content) {
-            return ($value = (new Minify)->img($content, resize: 100)) ? $value : $content;
+            return ($value = (new Minify)->img($content)) ? $value : $content;
         })->name('img');
 
         Route::file('css/{name}', path()->resources('css/{name}'), function ($content) {

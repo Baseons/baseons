@@ -15,11 +15,11 @@
   <body>
     <main>
       <div class="first">
-        <div class="box-img">
-          <img class="logo" src="/file/img/logo.svg" />
-        </div>
+        <h1>BASEONS FRAMEWORK</h1>
 
-        {{-- <h1>BASEONS FRAMEWORK</h1> --}}
+        <div class="box-img">
+          <img class="logo" src="/file/img/logo.png" />
+        </div>
       </div>
 
       <section>
