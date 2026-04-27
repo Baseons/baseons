@@ -7,8 +7,6 @@ use Baseons\Router\Route;
 //                               WEB ROUTES                                  |
 // --------------------------------------------------------------------------|
 
-// composer test
-
 Route::namespace('App\Controllers\Web')->name('web')->group(function () {
     Route::get('/', 'Home@index')->name('home');
 
