@@ -1,6 +1,5 @@
 <?php
 
-use Baseons\Collections\Str;
 use Baseons\Test\Test;
 
 class example extends Test
@@ -30,6 +29,6 @@ class example extends Test
     {
         $ip = '192.168.0.1';
 
-        $this->assert(Str::isIPV4($ip), true);
+        $this->assert(str()->isIPV4($ip), true);
     }
 }
